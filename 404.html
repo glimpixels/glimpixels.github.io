@@ -69,6 +69,19 @@
         <video id="404" controls="" autoplay="" name="media" display="none"><source src="https://glimpixels.github.io/sound/404.mp3" type="audio/mp3"></video>
         <img src="https://glimpixels.github.io/404.jpg" id="no">
 		</div>
+        <script>
+            function uhoh() {
+            var executed = false;
+            return function() {
+                if (!executed) {
+                    executed = true;
+                        document.getElementById("404").play();
+                       document.getElementByClassName("yes").style.display="none";
+                       document.getElementById("no").style.display="block";
+                }
+    };
+};
+        </script>
 	</body>
 
 </html>
