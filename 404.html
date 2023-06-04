@@ -51,17 +51,23 @@
                 vertical-align: middle;
 			}
 
+            .yes{
+                display: block;
+            }
+            #no{
+                display: none;
+            }
+
 		</style>
 
 	</head>
 
 	<body>
 		<div id="center">
-		<h1>UHOH</h1>
-        <audio preload="auto" id="404">
-            <source src="https://glimpixels.github.io/sound/404.mp3" type="audio/mp3">
-        </audio>
-        <video id="404" controls="" autoplay="" name="media"><source src="https://glimpixels.github.io/sound/404.mp3" type="audio/mp3"></video>
+		<h1 class="yes">UHOH</h1>
+        <button onclick="uhoh" class="yes">press here for more info</button>
+        <video id="404" controls="" autoplay="" name="media" display="none"><source src="https://glimpixels.github.io/sound/404.mp3" type="audio/mp3"></video>
+        <img src="https://glimpixels.github.io/404.jpg" id="no">
 		</div>
 	</body>
 

@@ -2,18 +2,15 @@
 //    document.getElementById("404").play();
 //    
 //  }, 1000)
-setTimeout(function(){
-function uhoh(){
-    something();
-}
-}, 1000)
 
-function something() {
+function uhoh() {
     var executed = false;
     return function() {
         if (!executed) {
             executed = true;
                 document.getElementById("404").play();
+                document.getElementByClassName("yes").style.display="none";
+                document.getElementById("no").style.display="block";
         }
     };
 };
