@@ -7,7 +7,7 @@ function uhoh(){
     something();
 }
 
-var something = (function() {
+function something() {
     var executed = false;
     return function() {
         if (!executed) {
@@ -18,4 +18,4 @@ var something = (function() {
               }, 1000)
         }
     };
-})();
+};
