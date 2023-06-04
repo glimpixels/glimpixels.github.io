@@ -57,7 +57,8 @@
             #no{
                 display: none;
             }
-            #404 {
+            video {
+				visibility:hidden;
                 display: none;
             }
 
@@ -68,9 +69,9 @@
 	<body>
 		<div id="center">
 		<h1 class="yes">UHOH</h1>
+		<img src="404.jpg" id="no">
         <button onclick="uhoh()" class="yes"><i>press here for more info</i></button>
         <video id="404" controls="" autoplay="" name="media" display="none"><source src="404.mp3" type="audio/mp3"></video>
-        <img src="404.jpg" id="no">
 		</div>
         <script>
             function uhoh() {
