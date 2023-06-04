@@ -52,11 +52,16 @@
 	<body>
 		<div id="center">
 		<h1>404 FR FR</h1>
-        
-        <video autoplay muted name="media">
+        <audio preload="auto" id="404">
             <source src="https://glimpixels.github.io/sound/404.mp3" type="audio/mp3">
-        </video>
+        </audio>
+        <script type="text/javascript">
+            window.onload=function(){
+                document.getElementById("404").play();
+              }
+        </script>
 
+        <!--<video controls="" autoplay="" name="media"><source src="https://glimpixels.github.io/sound/404.mp3" type="audio/mp3"></video>-->
 		</div>
 	</body>
 
