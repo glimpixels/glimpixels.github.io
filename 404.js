@@ -3,7 +3,7 @@
 //    
 //  }, 1000)
 
-function uhoh{
+function uhoh(){
     something();
 }
 
